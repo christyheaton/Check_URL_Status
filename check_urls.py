@@ -32,7 +32,7 @@ def parse_options():
 def get_current_log(target):
     '''Returns the location of output, either stdout or a file open for writing'''
     log = sys.stdout
-    if (target != ''):
+    if target:
         log = target and open(target, 'w') or sys.stdout
     return log
 
