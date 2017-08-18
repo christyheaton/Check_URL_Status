@@ -20,12 +20,12 @@ check_urls.py tests the HTTP status of all the URLs in a file.
 
 ### Sample runs
 
-* Test the status of all URLs in the specified file and output results to standard output (must be run in same directory as test_check_urls.py)
+* Test the status of all URLs in the specified file and output results to standard output (must be run in same directory as check_urls.py)
 ```
 python check_urls.py -i C:/Temp/urls_test.txt
 ```
 
-* Test the status of all URLs in the specified file and save results to a specified log file (must be run in same directory as test_check_urls.py)
+* Test the status of all URLs in the specified file and save results to a specified log file (must be run in same directory as check_urls.py)
 ```
 python check_urls.py -i C:/Temp/urls_test.txt -o C:/Temp/log.txt
 ```
