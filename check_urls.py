@@ -46,8 +46,10 @@ def main():
     for url in url_list:
         try:
             code = get_status_code(url)
-            log.write("\n" + '{0} returned {1}'.format(url,code))
-
+            if code == 200:
+                log.write("\n" + '{0} returned {1}'.format(url,code))
+            else:
+                log.write("\n" + 'WARNING! {0} returned {1}'.format(url,code))
         except:
             log.write("\n" + 'Invalid URL!')
 
