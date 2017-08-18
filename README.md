@@ -30,7 +30,7 @@ python check_urls.py -i C:/Temp/urls_test.txt
 python check_urls.py -i C:/Temp/urls_test.txt -o C:/Temp/log.txt
 ```
 
-* Run the test suite (must be run in same directory as test_check_urls.py and test_check_urls.py)
+* Run the test suite (must be run in same directory as check_urls.py and test_check_urls.py)
 ```
 pytest
 ```
