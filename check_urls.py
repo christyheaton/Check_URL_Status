@@ -21,7 +21,7 @@ def get_status_code(url):
 
 def parse_options():
     '''Returns a dictionary-like object of command line arguments'''
-    parser = argparse.ArgumentParser(description='Test PCC options')
+    parser = argparse.ArgumentParser(description='Options')
     parser.add_argument('-o', '--output', help='Output file name', default='', dest='logger')
     requiredNamed = parser.add_argument_group('required named arguments')
     requiredNamed.add_argument('-i', '--input', help='Input url file', required=True, dest='url_file')
